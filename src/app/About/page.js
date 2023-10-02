@@ -15,7 +15,7 @@ export default function About(){
             <div className="ml-20 mb-20">
 
                 <div className="mx-auto border-2 border-pink w-40 h-50 rounded-full">
-                    <Image src={pic} className="border-2  border-pink rounded-full"></Image>
+                    <Image src={pic} alt="anuj pic" className="border-2  border-pink rounded-full"></Image>
                 </div>
                     <div className="mx-auto px-2 py-2 text-grey font-semiold text-lg">
                         <p>Finance & Tech Enthusiast | Creative Mind </p>

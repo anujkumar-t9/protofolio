@@ -56,24 +56,25 @@ export default function RootLayout({ children }) {
           <ul >
             <li >
               <Link className={footerIconStyle} href={"mailto:kumaranuj154000@gmail.com"}>
-                <Image src={EmailIcon}></Image>
+                <Image src={EmailIcon} alt='email'></Image>
                 <p className={footerTextStyle}>Email: kumaranuj154000@gmail.com</p>
               </Link>
               </li>
             <li>
               <Link href={"#"} className={footerIconStyle}>
-                <Image src={tweetIcon}></Image>
+                <Image src={tweetIcon} alt='twitter'></Image>
                 <p className={footerTextStyle}>Twitter or X </p>
               </Link>
             </li>
             <li>
-              <Link href={"https://www.linkedin.com/in/anuj-kr-vandium-915880194/"} className={footerIconStyle}><Image src={LinkedinIcon}></Image>
-                <p className={footerTextStyle}>Linkedin</p>
+              <Link href={"https://www.linkedin.com/in/anuj-kr-vandium-915880194/"} className={footerIconStyle}>
+              <Image src={LinkedinIcon} alt='Linkedin'></Image>
+              <p className={footerTextStyle}>Linkedin</p>
               </Link>
             </li>
             <li>
               <Link href={"https://github.com/anujkumar-t9"} className={footerIconStyle}>
-                <Image src={GithubIcon}></Image>
+                <Image src={GithubIcon} alt='Github'></Image>
                   <p className={footerTextStyle}>GitHub</p>
               </Link>
             </li>
