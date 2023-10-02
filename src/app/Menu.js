@@ -5,6 +5,8 @@ import iconMenue from "../../public/menue-icon.svg"
 import iconCross from "../../public/cross-icon.svg"
 import { useState } from "react";
 
+const linkStyle = "hover:text-lg decoration-white hover:underline"
+
 export default function Menu(){
     const [menuVisibile, setMenueVisibile] = useState(false);
     const [menuIcon, setMenuIcon] = useState(iconMenue);
@@ -26,12 +28,12 @@ export default function Menu(){
         <Image onClick={toggelMenu} src={ menuIcon } alt='menue' width={50} height={50}/>
         <ul style={{display: menuVisibile ? "block" : "none"}}>
 
-            <div className='bg-grey border-b-2 border-l-2 border-black px-2 pb-2'>
-              <li><Link href="/">Home</Link></li>
-              <li><Link href="/Blogs">Blogs</Link></li>
-              <li><Link href="/Workshop">Workshop</Link></li>
-              <li><Link href="/About">About Me</Link></li>
-              <li><Link href="/#footer-contact">Contact</Link> </li>
+            <div className='bg-black border-b-2 border-l-2 border-black px-2 pb-2'>
+              <li><Link className={linkStyle} href="/">Home</Link></li>
+              <li><Link className={linkStyle} href="/Blogs">Blogs</Link></li>
+              <li><Link className={linkStyle} href="/Workshop">Workshop</Link></li>
+              <li><Link  className={linkStyle} href="/About">About Me</Link></li>
+              <li><Link  className={linkStyle} href="/#footer-contact">Contact</Link> </li>
             </div>
 
         </ul>

@@ -8,10 +8,12 @@ module.exports = {
   theme: {
     colors : {
       "black" : "#0D0D0D",
-      "baige" : "#D99982",
-      "browen" : "#734636",
-      "grey" : "#D9CAC1",
-      "dirt" : "#8C7A70"
+      "teal" : "#3F7C85",
+      "pink" : "#FF5F5D",
+      "grey" : "#747E7E",
+      "sky":"#00CCBF",
+      "skylg":"#72F2EB",
+      "white" : "#ffff",
     },
     extend: {
       backgroundImage: {

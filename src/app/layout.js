@@ -5,14 +5,12 @@ import { Inter } from 'next/font/google'
 import EmailIcon from"../../public/email-icon.svg"
 import GithubIcon from"../../public/github.svg"
 import LinkedinIcon from"../../public/linkedn.svg"
-import TwiterIcon from"../../public/twiter.svg"
-import WhatsappIcon from"../../public/whatsapp.svg"
-import YoutubIcon from"../../public/youtube.svg"
+import tweetIcon from"../../public/twiter.svg"
 import Menu from "./Menu.js"
 
 const inter = Inter({ subsets: ['latin'] })
 const liStyle = 'list-none no-underline font-semibold text-base mr-5 mt-5 ml-5';
-const footerIconStyle = "inline-flex text-grey mx-20 py-2";
+const footerIconStyle = "inline-flex text-white mx-20 py-2";
 const footerTextStyle = "px-4"
 
 
@@ -33,9 +31,9 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
 
-        <header className='flex w-full h-14 opacity-90 bg-grey text-black border border-black rounded-lg fixed blur-none'>
+        <header className='flex w-full h-14 opacity-90 bg-black text-white border border-black rounded-lg fixed blur-none'>
 
-          <h1 className='flex-1 text-xl font-bold ml-6 mt-4'>Anuj Kumar</h1>
+          <h1 className='flex-1 text-white text-xl font-bold ml-6 mt-4'>Anuj Kumar</h1>
 
           <nav className=''>
             <ul className='flex justify-around'>
@@ -49,46 +47,34 @@ export default function RootLayout({ children }) {
           </nav>
         </header>
         
-        <div className='px-10 bg-grey'>
+        <div className='px-10'>
           {children}
         </div>
         
-        <footer id='footer-contact' className='bg-browen rounded-t-xl '>
-          <h2 className="text-grey text-2xl font-bold px-28 py-3 "> Contacts</h2>
+        <footer id='footer-contact' className='bg-teal rounded-t-xl '>
+          <h2 className="text-white text-2xl font-bold px-28 py-3 "> Contacts</h2>
           <ul >
             <li >
-              <Link className={footerIconStyle} href={"#"}>
+              <Link className={footerIconStyle} href={"mailto:kumaranuj154000@gmail.com"}>
                 <Image src={EmailIcon}></Image>
-                <p className={footerTextStyle}>Email</p>
+                <p className={footerTextStyle}>Email: kumaranuj154000@gmail.com</p>
               </Link>
               </li>
             <li>
               <Link href={"#"} className={footerIconStyle}>
-                <Image src={WhatsappIcon}></Image>
-                <p className={footerTextStyle}>Whatsapp</p>
+                <Image src={tweetIcon}></Image>
+                <p className={footerTextStyle}>Twitter or X </p>
               </Link>
             </li>
             <li>
-              <Link href={"#"} className={footerIconStyle}><Image src={LinkedinIcon}></Image>
+              <Link href={"https://www.linkedin.com/in/anuj-kr-vandium-915880194/"} className={footerIconStyle}><Image src={LinkedinIcon}></Image>
                 <p className={footerTextStyle}>Linkedin</p>
               </Link>
             </li>
             <li>
-              <Link href={"#"} className={footerIconStyle}>
+              <Link href={"https://github.com/anujkumar-t9"} className={footerIconStyle}>
                 <Image src={GithubIcon}></Image>
                   <p className={footerTextStyle}>GitHub</p>
-              </Link>
-            </li>
-            <li>
-              <Link href={"#"} className={footerIconStyle}>
-                <Image src={TwiterIcon}></Image>
-                <p className={footerTextStyle}>Twitter</p>
-              </Link>
-            </li>
-            <li>
-              <Link href={"#"} className={footerIconStyle}>
-                <Image src={YoutubIcon}></Image>
-                <p className={footerTextStyle}>YouTube</p>
               </Link>
             </li>
           </ul>
