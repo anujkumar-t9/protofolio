@@ -31,15 +31,17 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
 
-        <header className='flex w-full h-14 opacity-90 bg-black text-white border border-black rounded-lg fixed blur-none'>
+        <header className='flex w-full h-14 opacity-90 bg-black text-white rounded-lg fixed'>
 
-          <h1 className='flex-1 text-white text-xl font-bold ml-6 mt-4'>Anuj Kumar</h1>
+          <h1 className='flex-1 text-white text-xl font-bold ml-6 mt-4'><Link href="/">Anuj Kumar</Link></h1>
 
           <nav className=''>
             <ul className='flex justify-around'>
 
               <li className={liStyle}>
-                <p>Dashborard</p>
+                <p>
+                <Link href="/">Dashborard</Link>
+                </p>
               </li>
               <li><Menu /></li>
             </ul>
@@ -50,8 +52,9 @@ export default function RootLayout({ children }) {
         <div className='px-10'>
           {children}
         </div>
-        
-        <footer id='footer-contact' className='bg-teal rounded-t-xl '>
+        <div className='flex md:block'>
+        <footer id='footer-contact' className='bg-teal rounded-t-xl'>
+          <div className=''>
           <h2 className="text-white text-2xl font-bold px-28 py-3 "> Contacts</h2>
           <ul >
             <li >
@@ -79,8 +82,10 @@ export default function RootLayout({ children }) {
               </Link>
             </li>
           </ul>
-
+          </div>
         </footer>
+        </div>
+
       </body>
     </html>
 
