@@ -9,7 +9,7 @@ export default function Home() {
     <div className="py-20">
 
       <div className="ml-10 pl-5 justify-self-auto text-centre "> 
-        <h1 className="font-bold text-4xl text-grey ">Hey! It's me Anuj</h1>
+        <h1 className="font-bold text-4xl text-grey ">Hey! Its me Anuj</h1>
         <p className="font-bold text-grey ml-8 pl-12 pt-2">Explore More</p>
       </div>
       <Image src={pic} alt="Anuj Pic"></Image>
