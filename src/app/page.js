@@ -1,41 +1,43 @@
 import Image from "next/image";
 import pic from "../../public/anuj-pic.png";
-import ball from "../../public/ball.svg";
 
 
 export default function Home() {
  
   return (
-    <div className="py-20">
-
-      <div className=" relative ml-10 pl-5 justify-self-auto text-centre"> 
-        <h1 className="font-bold text-4xl text-grey ">Hey! Its me Anuj</h1>
-        <p className="font-bold text-grey ml-8 pl-12 pt-2">Explore More</p>
-      </div>
-
-      <div className="block md:flex" >
-    
-      <Image  className="" src={pic} alt="Anuj Pic"></Image>
-      </div>
-      
-
-      <div className=" relative w-4/5">
-        <div className="w-full relative left-10">
-          <Image className="" src={ball} alt="ball"></Image>
+    <>
+      <div className="pt-10 flex bg-sky-200 w-full h-full">
+        <div className="pl-44">
+            <Image src={pic} alt="anuj "/>
         </div>
 
-        <div className="absolute top-1/2 left-1/2">
-        <p className="text-sm text-white ">Get me resume <div className="animate-bounce">👇</div></p>
-        <button className="text-xs text-white bg-gradient-to-r from-teal to-sky hover:from-skylg hover:to-teal rounded-lg ml-3 my-2 border-1 w-24 h-8" >
-         Download CV
-        </button>
+        <div className="mt-10 pl-10">
+
+            <h1 className="text-6xl font-bold underline pt-10 pl-20 pb-2">aK</h1>
+            <h1 className="text-3xl font-bold tracking-wide mb-3">It's Me Anuj!</h1>
+
+            <div className="mb-2 text-lg tracking-wide font-semibold">
+                <p>Design  Built Think Delivered Outperform</p>
+            </div>
+            
+            <div className="text-sm">
+            <p>I'm 19 year, Fresh Tech and Finance Enthusiastic. Enjoy learing new skills.</p>
+            <p>Pursing Chartered Accountant(CA) from ICAI along with Under Graduation</p>
+            <p>B.Com(hon) in Accounts from PU (patliputra university).</p>
+            <p>Complete 12th in Maths (PCM).</p>
+            <p>Specialty in Tech and Finance Great Combination.</p>
+            </div>
+  
+            
+          <div className="mt-3">
+                <p className="font-semibold">Eager to An Opportunity for intership/Job</p>
+                <button className="mt-1 ml-16  w-32 h-8 border-2 tracking-wide font-semibold border-current hover:bg-black hover:text-white">
+                    Get resume
+                </button>
+            </div>
         </div>
-      </div>
-
-
-
- 
     </div>
+    </>
   );
 
 }

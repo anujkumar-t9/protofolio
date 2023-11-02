@@ -1,6 +1,6 @@
 
 const headerStyle = "flex justify-between"
-const NameStyle = "pl-1 text-2xl text-grey font-bold"
+const NameStyle = "pl-1 text-2xl text-black font-bold"
 const dateStyle = "text-xs inline-centre pr-0.5"
 const contentStyle = "mt-2 mx-1"
 const TitleStyle = "text-lg  font-semibold"
@@ -11,7 +11,7 @@ export default function Blogs(){
         
         <div className=" pb-10 py-20 ">
 
-            <div className="my-8 bg-sky text-white shadow-skylg shadow-2xl rounded-md w-50 h-40">
+            <div className="my-8 bg-slate-50 text-black shadow-2xl rounded-md w-50 h-40">
                 <div className={headerStyle}>
                     <h1 className={NameStyle}>Anuj Kr.</h1> 
                     <p className={dateStyle}>date:</p>
@@ -23,7 +23,7 @@ export default function Blogs(){
                 </div>
             </div>
 
-            <div className="bg-sky text-white shadow-skylg shadow-2xl rounded-md w-50 h-40">
+            <div className="my-8 bg-slate-50 text-black shadow-2xl rounded-md w-50 h-40">
                 <div className={headerStyle}>
                     <h1 className={NameStyle}>Anuj Kr.</h1> 
                     <p className={dateStyle}>date:</p>
