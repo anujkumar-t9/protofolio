@@ -14,17 +14,17 @@ export default function Home() {
         <div className="mt-10 pl-10">
 
             <h1 className="text-6xl font-bold underline pt-10 pl-20 pb-2">aK</h1>
-            <h1 className="text-3xl font-bold tracking-wide mb-3">It's Me Anuj!</h1>
+            <h1 className="text-3xl font-bold tracking-wide mb-3">Its Me Anuj!</h1>
 
             <div className="mb-2 text-lg tracking-wide font-semibold">
                 <p>Design  Built Think Delivered Outperform</p>
             </div>
             
             <div className="text-sm">
-            <p>I'm 19 year, Fresh Tech and Finance Enthusiastic. Enjoy learing new skills.</p>
-            <p>Pursing Chartered Accountant(CA) from ICAI along with Under Graduation</p>
-            <p>B.Com(hon) in Accounts from PU (patliputra university).</p>
-            <p>Complete 12th in Maths (PCM).</p>
+            <p>Im 19 year, Fresh Tech and Finance Enthusiastic. Enjoy learing new skills.</p>
+            <p>Pursing Chartered Accountant or CA from ICAI along with Under Graduation</p>
+            <p>B.Com Hon. in Accounts from PU or patliputra university.</p>
+            <p>Complete 12th in Maths or PCM.</p>
             <p>Specialty in Tech and Finance Great Combination.</p>
             </div>
   
