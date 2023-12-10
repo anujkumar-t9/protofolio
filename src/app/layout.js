@@ -60,7 +60,6 @@ export default function RootLayout({ children }) {
 
         {/* footer start here */}
         <footer id='footer-contact' className='bg-black text-white pl-56 pt-5'>
-          
           <div className='ml-40 pl-40 border-black border-4 justify-centre'>
             <h2 className="text-white text-2xl font-semibold tracking-wide mb-2"> Contacts</h2>
             <ul className=''>
